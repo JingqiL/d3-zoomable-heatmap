@@ -1,2 +1,2 @@
 # d3-visualization
-<img src="https://rawgit.com/JingqiL/d3-visualization-mapping/master/world-project.svg">
+<img src="https://github.com/JingqiL/d3-visualization-mapping/blob/master/world-project.svg">
