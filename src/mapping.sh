@@ -1,3 +1,4 @@
+#!/bin/bash
 #First install npm from https://nodejs.org/en/download/
 curl 'http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_0_countries.zip' -o ne_50m_admin_0_countries.zip
 unzip -o ne_50m_admin_0_countries.zip
@@ -18,6 +19,26 @@ sed 's/,$//' xxxx.json > xxx.ndjson #Remove the last character of each line and 
 ###But this does not return an normal json object, it's just well-formatted and easy to read. Still need to explore its usage.
 #Install ndjson-cli package---Command line tools for operating on newline-delimited JSON streams. Installation follow "https://github.com/mbostock/ndjson-cli".
 ndjson-map 'd.pubcountry = d["Publication number"].slice(0,2), d' < xxx.ndjson > xxxpubcountry.ndjson #Extract the country information from our content.
+#Return the value of pubcountry as an array.
+ndjson-map 'd.pubcountry' < proquestpubcountry.ndjson | awk ' \  
+BEGIN {print "{" }  \  #To create a json first add a { at the very beginning.
+{ dictionary[$0]++ }  \ #Count the times that one country shows in one document.
+END { \
+	counter= 0; \ 
+	for (d in dictionary) { \
+		counter++; \
+		if (counter < length(dictionary)) { \
+			printf "%s: %s,\n", d, dictionary[d]; \ #Add comma at the end of each line.
+		} else { \
+			printf "%s: %s\n", d, dictionary[d] \  #If the last line don't add anything.
+		} \
+	}; \
+	print "}" \ #add a bracket at last.
+}' > country.json
+
+
+
+
 
 
 
