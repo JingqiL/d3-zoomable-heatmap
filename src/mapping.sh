@@ -11,7 +11,7 @@ geoproject 'd3.geoEquirectangular().rotate([100,0]).center([-50,0])' < world.jso
 geo2svg -w 1600 -h 800 < world-project.json > world-project.svg
 #From now about pop-up information we are going to display on our website.#
 csv2json < xxx.csv > xxx.json #csv to json.
-sed '1d' xxx.json | sed '$ d' > xxxx.ndjson  #Remove the first line and the last line.
+sed '1d' xxx.json | sed '$ d' > xxxx.json  #Remove the first line and the last line.
 sed 's/,$//' xxxx.json > xxx.ndjson #Remove the last character of each line and make it as ndjson.
 ###If the json is an unnamed array that with lots of children objects in it, use jq to make it transfer to ndjson.
 ###Install jq package---commandline JSON processor. Installation follow "https://stedolan.github.io/jq/download/".
@@ -20,7 +20,7 @@ sed 's/,$//' xxxx.json > xxx.ndjson #Remove the last character of each line and 
 #Install ndjson-cli package---Command line tools for operating on newline-delimited JSON streams. Installation follow "https://github.com/mbostock/ndjson-cli".
 ndjson-map 'd.pubcountry = d["Publication number"].slice(0,2), d' < xxx.ndjson > xxxpubcountry.ndjson #Extract the country information from our content.
 #Return the value of pubcountry as an array.
-ndjson-map 'd.pubcountry' < proquestpubcountry.ndjson | awk ' \  
+ndjson-map 'd.pubcountry' < xxxpubcountry.ndjson | awk ' \  
 BEGIN {print "{" }  \  #To create a json first add a { at the very beginning.
 { dictionary[$0]++ }  \ #Count the times that one country shows in one document.
 END { \
@@ -34,9 +34,20 @@ END { \
 		} \
 	}; \
 	print "}" \ #add a bracket at last.
-}' > country.json
-
-
+}' > country.json 
+#country.json is an object that contains the appearance of each country.
+ndjson-map '{Title: d.Title, PubNo: d["Publication number"], pubdate: d["Publication date"], pubcountry: d.pubcountry}' < xxxpubcountry.ndjson > final.ndjson #Extract useful items from json.
+#Join data by ISO three code.
+csv2json < all.csv > code.json
+######Bind lon/lat to country######
+csv2json < location.csv > location.json
+sed '1d' location.json | sed '$ d' | sed 's/,$//' > location.ndjson
+ndjson-map 'd.pubcountry = d.country, d' < location.ndjson > loc.ndjson
+ndjson-join 'd.pubcountry' xxxpubcountry.ndjson loc.ndjson > join.ndjson
+ndjson-map 'd[0].latitude = d[1].latitude, d[0].longtude = d[1].longitude, d[0]' < join.ndjson > proquestloc.ndjson
+ndjson-reduce < proquestloc.ndjson | ndjson-map > proquestloc.json
+jq '.[]' proquestloc.json > proquest-join.ndjson
+######
 
 
 
