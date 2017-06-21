@@ -44,9 +44,9 @@ csv2json < location.csv > location.json
 sed '1d' location.json | sed '$ d' | sed 's/,$//' > location.ndjson
 ndjson-map 'd.pubcountry = d.country, d' < location.ndjson > loc.ndjson
 ndjson-join 'd.pubcountry' xxxpubcountry.ndjson loc.ndjson > join.ndjson
-ndjson-map 'd[0].latitude = d[1].latitude, d[0].longtude = d[1].longitude, d[0]' < join.ndjson > proquestloc.ndjson
-ndjson-reduce < proquestloc.ndjson | ndjson-map > proquestloc.json
-jq '.[]' proquestloc.json > proquest-join.ndjson
+ndjson-map 'd[0].latitude = d[1].latitude, d[0].longtude = d[1].longitude, d[0]' < join.ndjson > xxxloc.ndjson
+ndjson-reduce < xxxloc.ndjson | ndjson-map > xxxloc.json
+jq '.[]' xxxloc.json > xxx-join.ndjson
 ######
 
 
