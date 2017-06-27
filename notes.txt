@@ -1,0 +1,10 @@
+d3.geo.path()--Creates a new geographic path generator with the default settings: the albersUsa projection and a point radius of 4.5 pixels.
+
+path.projection()--If projection is specified, sets the projection used by the path generator to the specified projection function. If projection is not specified, returns the current projection, which defaults to albersUsa.
+
+Stroke-linejoin specifies the shape to be used at the corners of paths or basic shapes when they are stroked; fill sets the color inside the object; stroke sets the color of the line drawn around the object; stroke-linecap specifies the shape to be used at the end of open subpaths when they are stroked.
+
+topojson.mesh()--Returns the GeoJSON MultiLineString geometry object representing the mesh for the specified object in the given topology. This is useful for rendering strokes in complicated objects efficiently, as edges that are shared by multiple features are only stroked once. If object is not specified, a mesh of the entire topology is returned. The returned geometry is a shallow copy of the source object: they may share coordinates.
+
+Topojson--TopoJSON is an extension of GeoJSON that encodes topology. Rather than representing geometries discretely, geometries in TopoJSON files are stitched together from shared line segments called arcs. TopoJSON eliminates redundancy, allowing related geometries to be stored efficiently in the same file.
+
