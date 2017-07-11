@@ -23,7 +23,7 @@ ndjson-split < xxx.json | ndjson-map 'd.pubcountry = d["Publication number"].sli
 #csv2json < location.csv > location.json
 #sed '1d' location.json | sed '$ d' | sed 's/,$//' > location.ndjson
 #ndjson-map 'd.pubcountry = d.country, d' < location.ndjson > loc.ndjson
-ndjson-join 'd.pubcountry' xxxpubcountry.ndjson loc.ndjson | ndjson-map 'd[0].latitude = d[1].latitude, d[0].longtude = d[1].longitude, d[0]' | jq '.[]' > xxx-join.ndjson
+ndjson-join 'd.pubcountry' xxxpubcountry.ndjson loc.ndjson | ndjson-map 'd[0].latitude = d[1].latitude, d[0].longtude = d[1].longitude, d[0]' | jq '.' > xxx-join.ndjson
 #ndjson-reduce | ndjson-map > xxxloc.json
 
 #jq '.[]' xxx.json is equavalent to jq '.' xxx.ndjson. Both return a well formatted like-ndjson file. 
