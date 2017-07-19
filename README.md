@@ -5,3 +5,5 @@ Use InterpolateVirdis
 <img src="https://cdn.rawgit.com/JingqiL/d3-visualization-mapping/99c102f1/network-color.svg">
 Use interpolateRainbow
 <img src="https://cdn.rawgit.com/JingqiL/d3-visualization-mapping/9594f804/network-color.svg">
+Use interpoalteReds
+<img src="https://cdn.rawgit.com/JingqiL/d3-visualization-mapping/c2c4409c/xx.svg">
