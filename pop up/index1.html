@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+</head>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<body>
+	<svg width="1800", height="1000" >
+	</svg>
+	<script>
+	var svg = d3.select("svg"),
+			width = +svg.attr("width"),
+			height = +svg.attr("height");
+
+	var documents = d3.map();
+
+	var path = d3.geoPath();
+
+	var x = d3.scaleLinear()
+    .domain([1, 10])
+    .rangeRound([600, 1200]);
+
+    var color = d3.scaleThreshold()
+    .domain(d3.range(2, 10))
+    .range(d3.schemeYlGnBu[9]);
+
+    var g = svg.append("g")
+    .attr("class", "key")
+    .attr("transform", "translate(0,940)");
+
+    g.selectAll("rect")
+    .data(color.range().map(function(d) {
+       d = color.invertExtent(d);
+       if (d[0] == null) d[0] = x.domain()[0];
+       if (d[1] == null) d[1] = x.domain()[1];
+       return d;
+     }))
+    .enter().append("rect")
+    .attr("height", 10)
+    .attr("x", function(d) { return x(d[0]); })
+    .attr("width", function(d) { return x(d[1]) - x(d[0]); })
+    .attr("fill", function(d) { return color(d[0]); });
+
+    g.append("text")
+    .attr("class", "caption")
+    .attr("x", x.range()[0])
+    .attr("y", -6)
+    .attr("fill", "#000")
+    .attr("text-anchor", "start")
+    .attr("font-weight", "bold")
+    .text("Number of Documents");
+
+    var num = [1,10,100,200,500,1000,2000,4000];
+
+    g.call(d3.axisBottom(x)
+    .tickSize(13)
+    .tickFormat(function(i) { return num[i-2] ; })
+    .tickValues(color.domain()))
+    .select(".domain")
+    .remove();
+
+    d3.queue()
+     .defer(d3.json, "topo.json")
+     .await(ready);
+
+    function ready(error, world) {
+    if (error) throw error;
+
+    svg.append("g")
+    .attr("class", "counties")
+    .selectAll("path")
+    .data(topojson.feature(world, world.objects.counties).features)
+    .enter().append("path")
+    .attr("d", path)
+    .attr("fill", function(d) { console.log(d.properties.densityscale);return color(d.properties.densityscale); })
+    .append("title")
+    .text(function(d) { return d.properties.density; });
+
+}
+	</script>
+</body>
