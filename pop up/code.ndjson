@@ -1,0 +1,247 @@
+{"id":"AF","Country":"Afghanistan"}
+{"id":"AX","Country":"Aland Islands"}
+{"id":"AL","Country":"Albania"}
+{"id":"DZ","Country":"Algeria"}
+{"id":"AS","Country":"American Samoa"}
+{"id":"AD","Country":"Andorra"}
+{"id":"AO","Country":"Angola"}
+{"id":"AI","Country":"Anguilla"}
+{"id":"AQ","Country":"Antarctica"}
+{"id":"AG","Country":"Antigua and Barbuda"}
+{"id":"AR","Country":"Argentina"}
+{"id":"AM","Country":"Armenia"}
+{"id":"AW","Country":"Aruba"}
+{"id":"AU","Country":"Australia"}
+{"id":"AT","Country":"Austria"}
+{"id":"AZ","Country":"Azerbaijan"}
+{"id":"BS","Country":"Bahamas"}
+{"id":"BH","Country":"Bahrain"}
+{"id":"BD","Country":"Bangladesh"}
+{"id":"BB","Country":"Barbados"}
+{"id":"BY","Country":"Belarus"}
+{"id":"BE","Country":"Belgium"}
+{"id":"BZ","Country":"Belize"}
+{"id":"BJ","Country":"Benin"}
+{"id":"BM","Country":"Bermuda"}
+{"id":"BT","Country":"Bhutan"}
+{"id":"BO","Country":"Bolivia"}
+{"id":"BA","Country":"Bosnia and Herzegovina"}
+{"id":"BW","Country":"Botswana"}
+{"id":"BV","Country":"Bouvet Island"}
+{"id":"BR","Country":"Brazil"}
+{"id":"VG","Country":"British Virgin Islands"}
+{"id":"IO","Country":"British Indian Ocean Territory"}
+{"id":"BN","Country":"Brunei Darussalam"}
+{"id":"BG","Country":"Bulgaria"}
+{"id":"BF","Country":"Burkina Faso"}
+{"id":"BI","Country":"Burundi"}
+{"id":"KH","Country":"Cambodia"}
+{"id":"CM","Country":"Cameroon"}
+{"id":"CA","Country":"Canada"}
+{"id":"CV","Country":"Cape Verde"}
+{"id":"KY","Country":"Cayman Islands"}
+{"id":"CF","Country":"Central African Republic"}
+{"id":"TD","Country":"Chad"}
+{"id":"CL","Country":"Chile"}
+{"id":"CN","Country":"China"}
+{"id":"HK","Country":"Hong Kong, SAR China"}
+{"id":"MO","Country":"Macao, SAR China"}
+{"id":"CX","Country":"Christmas Island"}
+{"id":"CC","Country":"Cocos (Keeling) Islands"}
+{"id":"CO","Country":"Colombia"}
+{"id":"KM","Country":"Comoros"}
+{"id":"CG","Country":"Congo (Brazzaville)"}
+{"id":"CD","Country":"Congo, (Kinshasa)"}
+{"id":"CK","Country":"Cook Islands"}
+{"id":"CR","Country":"Costa Rica"}
+{"id":"CI","Country":"Côte d'Ivoire"}
+{"id":"HR","Country":"Croatia"}
+{"id":"CU","Country":"Cuba"}
+{"id":"CY","Country":"Cyprus"}
+{"id":"CZ","Country":"Czech Republic"}
+{"id":"DK","Country":"Denmark"}
+{"id":"DJ","Country":"Djibouti"}
+{"id":"DM","Country":"Dominica"}
+{"id":"DO","Country":"Dominican Republic"}
+{"id":"EC","Country":"Ecuador"}
+{"id":"EG","Country":"Egypt"}
+{"id":"SV","Country":"El Salvador"}
+{"id":"GQ","Country":"Equatorial Guinea"}
+{"id":"ER","Country":"Eritrea"}
+{"id":"EE","Country":"Estonia"}
+{"id":"ET","Country":"Ethiopia"}
+{"id":"FK","Country":"Falkland Islands (Malvinas)"}
+{"id":"FO","Country":"Faroe Islands"}
+{"id":"FJ","Country":"Fiji"}
+{"id":"FI","Country":"Finland"}
+{"id":"FR","Country":"France"}
+{"id":"GF","Country":"French Guiana"}
+{"id":"PF","Country":"French Polynesia"}
+{"id":"TF","Country":"French Southern Territories"}
+{"id":"GA","Country":"Gabon"}
+{"id":"GM","Country":"Gambia"}
+{"id":"GE","Country":"Georgia"}
+{"id":"DE","Country":"Germany"}
+{"id":"GH","Country":"Ghana"}
+{"id":"GI","Country":"Gibraltar"}
+{"id":"GR","Country":"Greece"}
+{"id":"GL","Country":"Greenland"}
+{"id":"GD","Country":"Grenada"}
+{"id":"GP","Country":"Guadeloupe"}
+{"id":"GU","Country":"Guam"}
+{"id":"GT","Country":"Guatemala"}
+{"id":"GG","Country":"Guernsey"}
+{"id":"GN","Country":"Guinea"}
+{"id":"GW","Country":"Guinea-Bissau"}
+{"id":"GY","Country":"Guyana"}
+{"id":"HT","Country":"Haiti"}
+{"id":"HM","Country":"Heard and Mcdonald Islands"}
+{"id":"VA","Country":"Holy See (Vatican City State)"}
+{"id":"HN","Country":"Honduras"}
+{"id":"HU","Country":"Hungary"}
+{"id":"IS","Country":"Iceland"}
+{"id":"IN","Country":"India"}
+{"id":"ID","Country":"Indonesia"}
+{"id":"IR","Country":"Iran, Islamic Republic of"}
+{"id":"IQ","Country":"Iraq"}
+{"id":"IE","Country":"Ireland"}
+{"id":"IM","Country":"Isle of Man"}
+{"id":"IL","Country":"Israel"}
+{"id":"IT","Country":"Italy"}
+{"id":"JM","Country":"Jamaica"}
+{"id":"JP","Country":"Japan"}
+{"id":"JE","Country":"Jersey"}
+{"id":"JO","Country":"Jordan"}
+{"id":"KZ","Country":"Kazakhstan"}
+{"id":"KE","Country":"Kenya"}
+{"id":"KI","Country":"Kiribati"}
+{"id":"KP","Country":"Korea (North)"}
+{"id":"KR","Country":"Korea (South)"}
+{"id":"KW","Country":"Kuwait"}
+{"id":"KG","Country":"Kyrgyzstan"}
+{"id":"LA","Country":"Lao PDR"}
+{"id":"LV","Country":"Latvia"}
+{"id":"LB","Country":"Lebanon"}
+{"id":"LS","Country":"Lesotho"}
+{"id":"LR","Country":"Liberia"}
+{"id":"LY","Country":"Libya"}
+{"id":"LI","Country":"Liechtenstein"}
+{"id":"LT","Country":"Lithuania"}
+{"id":"LU","Country":"Luxembourg"}
+{"id":"MK","Country":"Macedonia, Republic of"}
+{"id":"MG","Country":"Madagascar"}
+{"id":"MW","Country":"Malawi"}
+{"id":"MY","Country":"Malaysia"}
+{"id":"MV","Country":"Maldives"}
+{"id":"ML","Country":"Mali"}
+{"id":"MT","Country":"Malta"}
+{"id":"MH","Country":"Marshall Islands"}
+{"id":"MQ","Country":"Martinique"}
+{"id":"MR","Country":"Mauritania"}
+{"id":"MU","Country":"Mauritius"}
+{"id":"YT","Country":"Mayotte"}
+{"id":"MX","Country":"Mexico"}
+{"id":"FM","Country":"Micronesia, Federated States of"}
+{"id":"MD","Country":"Moldova"}
+{"id":"MC","Country":"Monaco"}
+{"id":"MN","Country":"Mongolia"}
+{"id":"ME","Country":"Montenegro"}
+{"id":"MS","Country":"Montserrat"}
+{"id":"MA","Country":"Morocco"}
+{"id":"MZ","Country":"Mozambique"}
+{"id":"MM","Country":"Myanmar"}
+{"id":"NA","Country":"Namibia"}
+{"id":"NR","Country":"Nauru"}
+{"id":"NP","Country":"Nepal"}
+{"id":"NL","Country":"Netherlands"}
+{"id":"AN","Country":"Netherlands Antilles"}
+{"id":"NC","Country":"New Caledonia"}
+{"id":"NZ","Country":"New Zealand"}
+{"id":"NI","Country":"Nicaragua"}
+{"id":"NE","Country":"Niger"}
+{"id":"NG","Country":"Nigeria"}
+{"id":"NU","Country":"Niue"}
+{"id":"NF","Country":"Norfolk Island"}
+{"id":"MP","Country":"Northern Mariana Islands"}
+{"id":"NO","Country":"Norway"}
+{"id":"OM","Country":"Oman"}
+{"id":"PK","Country":"Pakistan"}
+{"id":"PW","Country":"Palau"}
+{"id":"PS","Country":"Palestinian Territory"}
+{"id":"PA","Country":"Panama"}
+{"id":"PG","Country":"Papua New Guinea"}
+{"id":"PY","Country":"Paraguay"}
+{"id":"PE","Country":"Peru"}
+{"id":"PH","Country":"Philippines"}
+{"id":"PN","Country":"Pitcairn"}
+{"id":"PL","Country":"Poland"}
+{"id":"PT","Country":"Portugal"}
+{"id":"PR","Country":"Puerto Rico"}
+{"id":"QA","Country":"Qatar"}
+{"id":"RE","Country":"Réunion"}
+{"id":"RO","Country":"Romania"}
+{"id":"RU","Country":"Russian Federation"}
+{"id":"RW","Country":"Rwanda"}
+{"id":"BL","Country":"Saint-Barthélemy"}
+{"id":"SH","Country":"Saint Helena"}
+{"id":"KN","Country":"Saint Kitts and Nevis"}
+{"id":"LC","Country":"Saint Lucia"}
+{"id":"MF","Country":"Saint-Martin (French part)"}
+{"id":"PM","Country":"Saint Pierre and Miquelon"}
+{"id":"VC","Country":"Saint Vincent and Grenadines"}
+{"id":"WS","Country":"Samoa"}
+{"id":"SM","Country":"San Marino"}
+{"id":"ST","Country":"Sao Tome and Principe"}
+{"id":"SA","Country":"Saudi Arabia"}
+{"id":"SN","Country":"Senegal"}
+{"id":"RS","Country":"Serbia"}
+{"id":"SC","Country":"Seychelles"}
+{"id":"SL","Country":"Sierra Leone"}
+{"id":"SG","Country":"Singapore"}
+{"id":"SK","Country":"Slovakia"}
+{"id":"SI","Country":"Slovenia"}
+{"id":"SB","Country":"Solomon Islands"}
+{"id":"SO","Country":"Somalia"}
+{"id":"ZA","Country":"South Africa"}
+{"id":"GS","Country":"South Georgia and the South Sandwich Islands"}
+{"id":"SS","Country":"South Sudan"}
+{"id":"ES","Country":"Spain"}
+{"id":"LK","Country":"Sri Lanka"}
+{"id":"SD","Country":"Sudan"}
+{"id":"SR","Country":"Suriname"}
+{"id":"SJ","Country":"Svalbard and Jan Mayen Islands"}
+{"id":"SZ","Country":"Swaziland"}
+{"id":"SE","Country":"Sweden"}
+{"id":"CH","Country":"Switzerland"}
+{"id":"SY","Country":"Syrian Arab Republic (Syria)"}
+{"id":"TW","Country":"Taiwan, Republic of China"}
+{"id":"TJ","Country":"Tajikistan"}
+{"id":"TZ","Country":"Tanzania, United Republic of"}
+{"id":"TH","Country":"Thailand"}
+{"id":"TL","Country":"Timor-Leste"}
+{"id":"TG","Country":"Togo"}
+{"id":"TK","Country":"Tokelau"}
+{"id":"TO","Country":"Tonga"}
+{"id":"TT","Country":"Trinidad and Tobago"}
+{"id":"TN","Country":"Tunisia"}
+{"id":"TR","Country":"Turkey"}
+{"id":"TM","Country":"Turkmenistan"}
+{"id":"TC","Country":"Turks and Caicos Islands"}
+{"id":"TV","Country":"Tuvalu"}
+{"id":"UG","Country":"Uganda"}
+{"id":"UA","Country":"Ukraine"}
+{"id":"AE","Country":"United Arab Emirates"}
+{"id":"GB","Country":"United Kingdom"}
+{"id":"US","Country":"United States of America"}
+{"id":"UM","Country":"US Minor Outlying Islands"}
+{"id":"UY","Country":"Uruguay"}
+{"id":"UZ","Country":"Uzbekistan"}
+{"id":"VU","Country":"Vanuatu"}
+{"id":"VE","Country":"Venezuela (Bolivarian Republic)"}
+{"id":"VN","Country":"Viet Nam"}
+{"id":"VI","Country":"Virgin Islands, US"}
+{"id":"WF","Country":"Wallis and Futuna Islands"}
+{"id":"EH","Country":"Western Sahara"}
+{"id":"YE","Country":"Yemen"}
+{"id":"ZM","Country":"Zambia"}
+{"id":"ZW","Country":"Zimbabwe"}
